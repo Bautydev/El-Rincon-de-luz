@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    box-sizing: border-box;
+}
+/*video de atras*/
+video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+li{
+    list-style: none;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    background-color: black;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%,rgba(0, 0, 0, .9) 1%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%);
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+.menu{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    z-index: 1;
+    background:linear-gradient(0deg, rgb(0, 0, 0) 0%,rgba(0, 0, 0, .4) 1%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%);;
+}
+/*menu izquierdo*/
+.menu-izquierdo{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
+/*menu derecho*/
+.menu-derecho{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 15px;
+    gap: 10px;
+    font-size: 20px;
+}
+/*simbolo carrito*/
+.menu-derecho li:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.menu-derecho :nth-child(2){
+    display: none;
+}
+/*titulo y parrafo*/
+.titulo{
+    flex: 1;
+    width: 95%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12vh;
+    align-items: center;
+    gap: 15px;
+}
+.titulo h1{
+    text-align: center;
+    background: #ccc;
+    font-size: clamp(1.5rem, 4vw + 3rem, 6.25rem);
+    background: 
+        linear-gradient(
+            to right,
+            hsl(330, 100%, 45.1%) 0%,
+            hsl(331, 89.25%, 47.36%) 9.5%,
+            hsl(330.53, 79.69%, 48.96%) 17.9%,
+            hsl(328.56, 70.89%, 49.96%) 25.3%,
+            hsl(324.94, 63.52%, 50.4%) 31.8%,
+            hsl(319.21, 54.99%, 50.3%) 37.7%,
+            hsl(310.39, 46.14%, 49.68%) 43.1%,
+            hsl(296.53, 39.12%, 49.7%) 48.2%,
+            hsl(280.63, 42.91%, 53.43%) 53.3%,
+            hsl(265.14, 47.59%, 56.84%) 58.3%,
+            hsl(250.13, 52.52%, 59.88%) 63.6%,
+            hsl(235.88, 59.2%, 60.91%) 69.4%,
+            hsl(225.81, 68.23%, 57.85%) 75.7%,
+            hsl(218.93, 74.97%, 54.21%) 82.8%,
+            hsl(213.89, 79.63%, 49.97%) 90.8%,
+            hsl(210, 100%, 45.1%) 100%
+        );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+.texto-titulo{
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+}
+/* menu desplegable*/
+svg{
+    margin-top: 15px;
+    height: 40px;
+}
+.menu-dos{
+    position: absolute;
+    display: none;
+}
+.mas:hover > .menu-dos{
+    display: flex;
+    flex-direction: column;
+}
+.menu-dos >li{
+    border-bottom: solid 1px #000;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    margin: 4px;
+    padding: 0;
+    width: 150px;
+    font-size: 20px;
+    transform: translateX(-10px);
+}
+.menu-dos >li:hover{
+    background-color: rgb(178, 97, 180);
+    border-radius: 5px;
+    transition: .4s;
+}
+/*media queries*/
+@media (min-width:740px){
+    .menu-derecho :nth-child(2){
+        display: flex;
+    }
+}
+@media (max-width:420px) {
+    .menu-izquierdo :nth-child(3){
+        display: none;
+    }
+}
+@media (max-width:565px) {
+    .menu-izquierdo :nth-child(4){
+        display: none;
+    }
+    .logo{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (max-width:620px) {
+    .menu-izquierdo > :nth-child(5){
+        display: none;
+    }
+}
+@media (min-width:420px) {
+    .mas{
+        display: none;
+    }
+}
+@media (max-width:420px) {
+    .menu-dos >li:nth-child(3){
+    display: grid;
+}
+}
