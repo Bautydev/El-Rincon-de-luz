@@ -9,8 +9,7 @@
 </head>
 <body>
     <header class="background">
-        <video muted autoplay loop poster src="https://videos.pexels.com/video-files/3997858/3997858-sd_640_338_25fps.mp4">
-        </video>
+        <img class="img-bg" src="content/pexels-designecologist-887352.jpg" alt="">
         <div class="banner">
             <div class="menu">
                 <nav>
@@ -20,15 +19,13 @@
                         <li><a href="#">Turnos</a></li>
                         <li><a href="#">Mis Trabajos</a></li>
                         <li><a href="#">Diseños</a></li>
-                        <li class="mas"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
-                            <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg></a>
+                        <li class="mas"><a href="#"><img class="img" src="content/menu_20dp_FILL0_wght400_GRAD0_opsz20 (1).png" alt=""></a>
                             <ul class="menu-dos">
+                                <li><a href="#">Productos</a></li>
                                 <li><a href="#">Turnos</a></li>
                                 <li><a href="#">Diseños</a></li>
                                 <li><a href="#">Mis Trabajos</a></li>
+                                <li><a href="#">Contáctame</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -36,7 +33,7 @@
                 <nav>
                     <ul class="menu-derecho">
                         <li><a href="#"><img class="logo" src="content/pngtree-user-icon-isolated-on-abstract-background-png-image_1824979-removebg-preview.png" alt="perfil"></a></li>
-                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Contáctame</a></li>
                         <li><a href="#"><img class="logo" src="content/bolso-removebg-preview.png" alt="bolso"></a></li>
                     </ul>
                 </nav>
@@ -47,13 +44,104 @@
             </div>
         </div>
     </header>
-    <article><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt id fugiat, iure laborum mollitia, sed illo impedit alias ullam unde ipsam voluptates veritatis non accusamus modi exercitationem sint quo? Cupiditate.
-        Dolorum mollitia rerum obcaecati eveniet ratione dolor debitis beatae libero sapiente dicta, quae incidunt consectetur minus. Eos quibusdam exercitationem, id at autem architecto aliquam, totam iusto nisi ducimus aspernatur doloremque.
-        Veniam itaque molestias debitis soluta iusto maiores voluptatem autem animi eius voluptates repellendus, laborum ex ea neque, totam cum fugiat numquam nesciunt temporibus ullam ut quos odit? Minus, asperiores explicabo?
-        Vel, qui! Ullam, porro! Aliquid excepturi tempora autem dicta libero ipsa nisi expedita mollitia, nihil possimus! Doloremque placeat ad quo nihil sit et maiores neque, est quibusdam aspernatur! Sunt, optio.
-        Cupiditate magnam, ipsa ad, quidem saepe quasi exercitationem sed fuga commodi amet optio necessitatibus incidunt soluta nostrum iusto voluptatum aut rerum, quaerat consectetur et. Vero velit officiis fugiat harum eum!
-        Nam excepturi, itaque amet perspiciatis ratione vitae, enim corrupti vero sint omnis voluptate commodi fuga eos consequatur saepe, deserunt in tenetur quae esse exercitationem libero quidem incidunt voluptatibus nesciunt! Qui.
-        Dolorem placeat enim tempore sit, harum eaque blanditiis quis, ipsa quas, quasi itaque quam voluptate fugit? Voluptatem magnam consequatur ab accusantium, amet doloremque quo praesentium fuga, sit voluptatibus, tempora facilis.
-        Inventore omnis consectetur ullam nulla quaerat magni adipisci qui, enim odio recusandae deleniti, architecto velit asperiores at quas nihil maxime vero rerum, doloremque reprehenderit error laborum dolorem magnam. Laboriosam, earum?</div></article>
+    <main>
+        <section class="section">
+            <article class="info">
+                <img src="content/perfil-removebg-preview.png" alt="" class="ft-perfil">
+                <p class="info-img">Hola! Soy Luz Gomez, manicurista certificada por <mark>RAFFI Cosmeticos</mark>, uno de los mejores instructores de manicuria, que me brindo la experiecia y sabiduria necesaria para hacer los mejores diseños de uñas. Mi objetivo es darte la mejor sensación posible en tus uñas>con las mejores técnicas de cuidado y productos de mucha calidad.
+                </p>
+            <form>
+                <h2>¡RESERVA TU TURNO PARA HOY!</h2>
+                <label for="NombrePersona">
+                    <input type="text" placeholder="Nombre" required>
+                </label>
+                <label>
+                    <input type="text" placeholder="Apellidos" required>
+                </label>
+                <label for="email">
+                    <input type="email" placeholder="Email" required>
+                </label>
+                <label for="telefono">
+                    <input type="tel" placeholder="Telefono" required>
+                </label>
+                <label for="hora">
+                    <h3>Horario</h3>
+                    <select>
+                        <option></option>
+                        <option>9:00</option>
+                        <option>11:00</option>
+                        <option>13:00</option>
+                        <option>15:00</option>
+                        <option>17:00</option>
+                        <option>19:00</option>
+                    </select>
+                </label>
+                <label for="submit">
+                    <input type="submit" placeholder="Enviar" class="submit">
+                </label>
+            </form>
+            </article>
+            <h2 class="t2">PRODUCTOS DESTACADOS</h2>
+            <article class="pd">
+                <div class="prods">
+                    <img class="prod1" src="prods/prod1.webp" alt="">
+                    <p>Kit inicial de manicuría</p>
+                    <p>⭐4.4</p><p><small>AR</small><strong>$27.999</strong></p>
+                    <button class="bt"><a  href="https://articulo.mercadolibre.com.ar/MLA-880394280-kit-inicial-manicuria-gel-esmalte-removedor-cabina-led-uv-_JM#position=33&search_layout=grid&type=item&tracking_id=1dd1b8b3-45a8-40f7-bf59-10a0e1659af7" target="_blank"><span>COMPRAR </span><br>(6 cuotas de $6.237)</a></button>
+                </div>
+                <div class="prods">
+                    <img class="prod1" src="prods/prod2.webp" alt="">
+                    <p>Torno Para Uñas</p>
+                    <p>⭐4.5</p><p><small>AR</small><strong>$50.699</strong></p>
+                    <button class="bt"><a  href="https://www.mercadolibre.com.ar/torno-para-unas-manos-pies-manicuria-pedicuria-accesorios-220v/p/MLA26533751?pdp_filters=category:MLA29884#searchVariation=MLA26533751&position=3&search_layout=grid&type=product&tracking_id=cc738ded-bf52-4abe-9917-8110d6fe937c" target="_blank"><span>COMPRAR </span><br>(6 cuotas de $11.293)</a></button>
+                </div>
+                <div class="prods">
+                    <img class="prod1" src="prods/prod3.webp" alt="">
+                    <p>Cabina Sun Uv Tactil</p>
+                    <p>⭐4.6</p><p><small>AR</small><strong>$20.398</strong></p>
+                    <button class="bt"><a  href="https://www.mercadolibre.com.ar/cabina-sun-uv-led-120w-timer-tactil-unas-gelificadas-semi-color-blanco/p/MLA19961076?pdp_filters=category:MLA29884#searchVariation=MLA19961076&position=4&search_layout=grid&type=product&tracking_id=67b9978b-d8b0-4546-91eb-710f8e8efbcb" target="_blank"><span>COMPRAR </span><br>(6 cuotas de $3.794)</a></button>
+                </div>
+                <div class="prods">
+                    <img class="prod1" src="prods/prod4.webp" alt="">
+                    <p>Torno Uñas Teknikpro</p>
+                    <p>⭐4.7</p><p><small>AR</small><strong>$93.996</strong></p>
+                    <button class="bt"><a  href="https://www.mercadolibre.com.ar/torno-unas-teknikpro-perfect-drill-manicura-podologia-local/p/MLA27993251?pdp_filters=category:MLA29884#searchVariation=MLA27993251&position=7&search_layout=grid&type=product&tracking_id=0e3978f3-b1d3-4dd8-b871-5ea0f722b8a2" target="_blank"><span>COMPRAR </span><br>(6 cuotas de $15.666)</a></button>
+                </div>
+            </article>
+        </section>
+        <section class="sec2">
+        <div class="opiniones">
+            <div class="content-opinion"><img src="/ftp-removebg-preview.png" alt="" class="ftp"><p>Nombre<br>5⭐<br> "Fue una experiencia inolvidable"</p></div>
+            <div class="content-opinion"><img src="/ftp-removebg-preview.png" alt="" class="ftp"><p>Nombre<br>5⭐<br> "Fue una experiencia inolvidable"</p></div>
+            <div class="content-opinion"><img src="/ftp-removebg-preview.png" alt="" class="ftp"><p>Nombre<br>5⭐<br> "Fue una experiencia inolvidable"</p></div>
+            <div class="content-opinion"><img src="/ftp-removebg-preview.png" alt="" class="ftp"><p>Nombre<br>5⭐<br> "Fue una experiencia inolvidable"</p></div>
+            <div class="content-opinion"><img src="/ftp-removebg-preview.png" alt="" class="ftp"><p>Nombre<br>5⭐<br> "Fue una experiencia inolvidable"</p></div>
+            <div class="content-opinion"><img src="/ftp-removebg-preview.png" alt="" class="ftp"><p>Nombre<br>5⭐<br> "Fue una experiencia inolvidable"</p></div>
+            <div class="content-opinion"><img src="/ftp-removebg-preview.png" alt="" class="ftp"><p>Nombre<br>5⭐<br> "Fue una experiencia inolvidable"</p></div>
+            <div class="content-opinion"><img src="/ftp-removebg-preview.png" alt="" class="ftp"><p>Nombre<br>5⭐<br> "Fue una experiencia inolvidable"</p></div>
+            <div class="content-opinion"><img src="/ftp-removebg-preview.png" alt="" class="ftp"><p>Nombre<br>5⭐<br> "Fue una experiencia inolvidable"</p></div>
+            <div class="content-opinion"><img src="/ftp-removebg-preview.png" alt="" class="ftp"><p>Nombre<br>5⭐<br> "Fue una experiencia inolvidable"</p></div>
+        </div>
+        <div class="fade"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="list">
+        <h2>El Rincón de Luz</h2>
+        <ul>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Mis Trabajos</a></li>
+            <li><a href="">Diseños</a></li>
+            <li><a href="">Turnos</a></li>
+        </ul>
+        </div>
+        <form class="form-footer">
+            <label><input type="text" placeholder="Comentario" class="coment"></label>
+            <label><input type="email" required placeholder=" Tu Email"></label>
+            <label><input class="submit" type="submit"></label>
+        </form>
+    </footer>
 </body>
 </html>
